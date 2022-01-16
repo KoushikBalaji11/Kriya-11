@@ -1,0 +1,184 @@
+:root {
+  --base-color: #230e29;
+  --header-color: #e0ffff;
+  --text-color: #e7c9f1;
+}
+/* #997a00 */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  /* height: 100vh; */
+  background-color: var(--base-color);
+  /* background-image: linear-gradient(45deg, #003, #51365a); */
+  color: var(--header-color);
+}
+.header {
+  text-align: end;
+  /* background-color: white; */
+  padding-bottom: 20px;
+  z-index: 10;
+}
+.header-text {
+  font-weight: 600;
+  font-size: 30px;
+  display: inline-block;
+  color: #997a00;
+  color: #cb86e0;
+  /* filter: brightness(1.6); */
+  text-shadow: #ffcc00 3px 0 10px;
+}
+.header-text::after {
+  content: "";
+  display: block;
+  width: 100%;
+  z-index: -1;
+  background-color: transparent;
+  border-bottom: 2px solid #faffff;
+  border-radius: 5px;
+}
+
+.parallax-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  filter: brightness(1.4);
+}
+.text-container {
+  height: fit-content;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  /* background-image: linear-gradient(45deg, #003, #51365a); */
+}
+.image {
+   box-shadow: -2px 0px 5px 6px #1307179d inset;
+  width: 100%;
+  height: 100vh; 
+  filter: brightness(0.8);
+}
+
+#img-1 {
+  height: 80vh;
+  width: 100%;
+  transform: translateY(-10px);
+  background-image: url("https://kriya.psgtech.ac.in/images/PSG1.jpg") !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#img-2 {
+  background-image: url("https://kriya.psgtech.ac.in/images/PSG%20-%202%20-%20edit.jpg") !important;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#img-3 {
+  background-image: url("https://kriya.psgtech.ac.in/images/bridge.jpeg") !important;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#img-4 {
+  background-image: url("https://kriya.psgtech.ac.in/images/bridge.jpeg") !important;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#img-5 {
+  background-image: url("https://kriya.psgtech.ac.in/images/bridge.jpeg") !important;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.title-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  font-size: 40px;
+  /* color: #ae44ce; */
+  color: #997a00;
+  text-shadow: #ffcc00 3px 0 10px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.text-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.psg-text {
+  text-align: center;
+  width: 90%;
+  margin-bottom: 3rem;
+}
+.psg-text,
+.text {
+  font-size: 1.4em;
+  font-weight: 450;
+  display: inline-block;
+  line-height: 2.3rem;
+}
+.highlight-text {
+  list-style: circle;
+  align-items: center;
+
+  justify-content: center;
+  width: 60%;
+  margin-bottom: 3rem;
+}
+.to-top.active {
+  cursor: pointer;
+  position: fixed;
+  /* cursor: pointer; */
+  bottom: 1.2rem;
+  right: 1.7rem;
+  height: 50px;
+  width: 50px;
+  /* font-size: xx-large; */
+  color: white;
+  border: 2px solid white;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* display: none; */
+}
+.to-top {
+  display: none;
+  z-index: 1000;
+  border-radius: 15px;
+}
+.about-psg-text-2 {
+  height: 100vh;
+}
+.container {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+@media only screen and (max-width: 780px) {
+  .header {
+    text-align: center;
+    /* margin: 0; */
+    /* padding-bottom: ; */
+  }
+  .psg-text,
+  .text,
+  .highlight-text {
+    font-size: 1em;
+    line-height: 1.4rem;
+  }
+  .highlight-text li {
+    margin-bottom: 20px;
+  }
+  .highlight-text li:last-child {
+    margin-bottom: 0;
+  }
+  .container {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+}
