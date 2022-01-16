@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>WorkshopPage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/workshop.css">
+  </head>
+
+  <body>
+    <div class="header">
+        <span class="header-text">WORKSHOPS</span>
+    </div>
+    <div class="container">
+        <div class="row1">
+            <div class="col-sm-4">
+                <div class="swiper mySwiper" id="workshop_modal1">
+                    <div class="container">
+                        <img class="logo" src="assets/images/img_1.png" alt="">
+                        <div class="card_heading" style="font-size: 18px;">INTRODUCTION TO INDUSTRY 4.0 AND INDUSTRIAL IOT (IIOT)</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="swiper mySwiper" id="workshop_modal2">
+                    <div class="container">
+                        <img class="logo" style="width: 70%; height: 20%;" src="assets/images/img_2.png" alt="">
+                        <div class="card_heading" style="font-size: 20px;">INTRODUCTION TO FUSION 360</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="swiper mySwiper" id="workshop_modal3">
+                    <div class="container">
+                        <img class="logo" style="width: 70%; height: 20%;" src="assets/images/img_3.png" alt="">
+                        <div class="card_heading" style="font-size: 18px;">MOBILE APPLICATION DEVELOPMENT</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="col-sm-4">
+                <div class="swiper mySwiper" id="workshop_modal4">
+                    <div class="container">
+                        <img class="logo" style="width: 70%; height: 20%;" src="assets/images/img_4.png" alt="">
+                        <div class="card_heading" style="font-size: 16px;">INDUSTRIAL MICROSCOPIC AND SPECTROSCOPIC ANALYSIS OF MATERIALS</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="swiper mySwiper" id="workshop_modal5">
+                    <div class="container">
+                        <img class="logo" style="width: 70%; height: 20%;" src="assets/images/img_5.png" alt="">
+                        <div class="card_heading" style="font-size: 18px;"> INTERNET OF THINGS FOR MECHANICAL APPLICATION</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="swiper mySwiper" id="workshop_modal6">
+                    <div class="container">
+                        <img class="logo" style="width: 70%; height: 20%;" src="assets/images/img_6.png" alt="">
+                        <div class="card_heading"" style="font-size: 18px;">THERMO-MECHANICAL SIMULATION FOR MANUFACTURING</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content" id="modal_start">
+            <span class="close"></span>
+            <div id="modal_heading" class="modal_heading"></div><br>
+            <div class="modal_sideHeading">DESCRIPTION</div>
+            <div id="modal_descriptionPara" class="modal-para"></div>
+            <div id="session1" class="modal_sideHeading">SESSION 1</div>
+            <div id="session1_Para" class="modal-para"></div>
+            <div id="session2" class="modal_sideHeading">SESSION 2</div>
+            <div id="session2_Para" class="modal-para"></div>
+            <div id="session3" class="modal_sideHeading">SESSION 3</div>
+            <div id="session3_Para" class="modal-para"></div>
+            <div id="session4" class="modal_sideHeading">SESSION 4</div>
+            <div id="session4_Para" class="modal-para"></div>
+            <div class="modal_sideHeading">FEES</div>
+            <div id="fees" class="modal-para"></div>
+            <div class="modal_info">
+                <div class="row">
+                    <div class="col-sm-6 info-box">
+                        <div class="modal_base">
+                            <h3 class="modal_time-date" style="color: white;">TIME</h3>
+                            <div class=" time-date" id="time"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 info-box">
+                        <div class="modal_base">
+                            <h3 class="modal_time-date" style="color: white;">DATE</h3>
+                            <div class=" time-date" id="date">10 April 2021</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal_info">
+                <div class="row">
+                    <div class="col-sm-6 info-box">
+                        <div class="modal_base">
+                            <h3 class="modal_sideHeading" style="color: white;">CONVENERS</h3>
+                            <div class=" time-date" id="convenors"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 info-box">
+                        <div class="modal_base">
+                            <h3 class="modal_sideHeading" style="color: white;">VOLUNTEERS</h3>
+                            <div class=" time-date" id="volunteers"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reg-outer">
+                <a href="#" class="gradient-border" id="box">
+                    <div class="register">
+                        <div class="reg-text">REGISTER</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/workshop.js"></script>
+  </body>
+</html>
