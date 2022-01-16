@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  /* for touch screen */
+  touch-action: none;
+}
+.gallery {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+body {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #111;
+  perspective: 400px;
+  transform-style: preserve-3d;
+}
+
+#drag-container,
+#spin-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  transform-style: preserve-3d;
+  transform: rotateX(-10deg);
+}
+
+#drag-container img,
+#drag-container video,
+#drag-container a img {
+  backface-visibility: hidden;
+  height: 100%;
+  width: 100%;
+  transform-style: preserve-3d;
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 400px;
+  font-size: 50px;
+  text-align: center;
+  box-shadow: 0 0 8px #fff;
+  -webkit-box-reflect: below 10px
+    linear-gradient(transparent, transparent, #0005);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+#drag-container img:hover,
+#drag-container video:hover,
+#drag-container a img {
+  box-shadow: 0 0 15px #fffd;
+  -webkit-box-reflect: below 10px
+    linear-gradient(transparent, transparent, #0007);
+}
+
+#drag-container p {
+  font-family: Serif;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateX(90deg);
+  color: #fff;
+}
+
+#ground {
+  width: 900px;
+  height: 900px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateX(90deg);
+  background: radial-gradient(center center, farthest-side, #9993, transparent);
+}
+
+#music-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes spinRevert {
+  from {
+    transform: rotateY(360deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}

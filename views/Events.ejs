@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>EventsPage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body onload="arrow()">
+    <div class="header">
+        <span class="header-text">EVENTS</span>
+    </div>
+    <div class="container">
+        <div class="row1">
+            <div class="col-sm-4">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <div class="sub-head">CIRCUIT</div><br>
+                                <div class="icon"><div class="arrow1"></div></div>
+                                <div class="direc">Swap the Cards to View the Events</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="circuit_modal1">
+                            <div class="container">
+                                <img class="logo" src="assets/images/circuit_1.png" alt="">
+                                <div class="card_heading">ELECTRIQUE</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="circuit_modal2">
+                            <div class="container">
+                                <img class="logo" src="assets/images/circuit_2.png" alt="">
+                                <div class="card_heading">CLIP AND CLAMP</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="circuit_modal3">
+                            <div class="container">
+                                <img class="logo" src="assets/images/circuit_3.png" alt="">
+                                <div class="card_heading">TECHNACK</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="circuit_modal4">
+                            <div class="container">
+                                <img class="logo" src="assets/images/circuit_4.png" alt="">
+                                <div class="card_heading">TECHTRIX</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="circuit_modal5">
+                            <div class="container">
+                                <img class="logo" src="assets/images/circuit_5.png" alt="">
+                                <div class="card_heading">ELECTXPLORE</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <div class="sub-head">BRAINIAC</div><br>
+                                <div class="icon"><div class="arrow2"></div></div>
+                                <div class="direc">Swap the Cards to View the Events</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="brainiac_modal1">
+                            <div class="container">
+                                <img class="logo" src="assets/images/brainiac_1.png" alt="">
+                                <div class="card_heading">SET TO SCAVENGE</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="brainiac_modal2">
+                            <div class="container">
+                                <div><img class="logo" src="assets/images/brainiac_2.png" alt=""></div>
+                                <div class="card_heading">TECH TALK</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="brainiac_modal3">
+                            <div class="container">
+                                <img class="logo" src="assets/images/brainiac_3.png" alt="">
+                                <div class="card_heading">CONNECT AND THINK</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="brainiac_modal4">
+                            <div class="container">
+                                <img class="logo" src="assets/images/brainiac_4.png" alt="">
+                                <div class="card_heading">INTERVIEW SIMULATION</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="brainiac_modal5">
+                            <div class="container">
+                                <img class="logo" src="assets/images/brainiac_5.png" alt="">
+                                <div class="card_heading">FORENSICIST</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="brainiac_modal6">
+                            <div class="container">
+                                <img class="logo" src="assets/images/brainiac_6.png" alt="">
+                                <div class="card_heading">TECHSHORTS</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="brainiac_modal7">
+                            <div class="container">
+                                <img class="logo" src="assets/images/brainiac_7.png" alt="">
+                                <div class="card_heading">MET-CAPTCH</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="brainiac_modal8">
+                            <div class="container">
+                                <img class="logo" src="assets/images/brainiac_8.png" alt="">
+                                <div class="card_heading">HASSLE-REM</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <div class="sub-head">CODING</div><br>
+                                <div class="icon"><div class="arrow3"></div></div>
+                                <div class="direc">Swap the Cards to View the Events</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="coding_modal1">
+                            <div class="container">
+                                <img class="logo" src="assets/images/coding_1.png" alt="">
+                                <div class="card_heading">INVENIRER</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="coding_modal2">
+                            <div class="container">
+                                <img class="logo" src="assets/images/coding_2.png" alt="">
+                                <div class="card_heading">CODE-QUEST</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="col-sm-4">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <div class="sub-head">DESIGN</div><br>
+                                <div class="icon"><div class="arrow4"></div></div>
+                                <div class="direc">Swap the Cards to View the Events</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="design_modal1">
+                            <div class="container">
+                                <img class="logo" src="assets/images/design_1.png" alt="">
+                                <div class="card_heading">CUT AND CRAFT</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="design_modal2">
+                            <div class="container">
+                                <img class="logo" src="assets/images/design_2.png" alt="">
+                                <div class="card_heading">DESIGN A TORR</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="design_modal3">
+                            <div class="container">
+                                <img class="logo" src="assets/images/design_3.png" alt="">
+                                <div class="card_heading">MECHANICAL MAESTRO</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="design_modal4">
+                            <div class="container">
+                                <img class="logo" src="assets/images/design_4.png" alt="">
+                                <div class="card_heading">CRAFT WITH WASTE</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="design_modal5">
+                            <div class="container">
+                                <img class="logo" src="assets/images/design_5.png" alt="">
+                                <div class="card_heading">VIMANA</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <div class="sub-head">QUIZ</div><br>
+                                <div class="icon"><div class="arrow5"></div></div>
+                                <div class="direc">Swap the Cards to View the Events</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="quiz_modal1">
+                            <div class="container">
+                                <img class="logo" src="assets/images/quiz_1.png" alt="">
+                                <div class="card_heading">DESOL PLEZIER</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="quiz_modal2">
+                            <div class="container">
+                                <img class="logo" src="assets/images/quiz_2.png" alt="">
+                                <div class="card_heading">METAQUEST</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="quiz_modal3">
+                            <div class="container">
+                                <img class="logo" src="assets/images/quiz_3.png" alt="">
+                                <div class="card_heading">PHYZPLORE</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="quiz_modal4">
+                            <div class="container">
+                                <img class="logo" src="assets/images/quiz_4.png" alt="">
+                                <div class="card_heading">FOCUS ON</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="quiz_modal5">
+                            <div class="container">
+                                <img class="logo" src="assets/images/quiz_5.png" alt="">
+                                <div class="card_heading">ICE AND FIRE</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="quiz_modal6">
+                            <div class="container">
+                                <img class="logo" src="assets/images/quiz_6.png" alt="">
+                                <div class="card_heading">ENZOVENATOR</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="quiz_modal7">
+                            <div class="container">
+                                <img class="logo" src="assets/images/quiz_7.png" alt="">
+                                <div class="card_heading">CALC-OHOLIC</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="quiz_modal8">
+                            <div class="container">
+                                <img class="logo" src="assets/images/quiz_8.png" alt="">
+                                <div class="card_heading">THRIVE TO DERIVE</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <div class="sub-head" style="font-size: 28px;">MANAGEMENT</div><br>
+                                <div class="icon"><div class="arrow6"></div></div>
+                                <div class="direc">Swap the Cards to View the Events</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="management_modal1">
+                            <div class="container">
+                                <img class="logo" src="assets/images/management_1.png" alt="">
+                                <div class="card_heading">AUTO FIESTA</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="management_modal2">
+                            <div class="container">
+                                <img class="logo" src="assets/images/management_2.png" alt="">
+                                <div class="card_heading">INNOVATION CHAMBER</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content" id="modal_start">
+            <span class="close"></span>
+            <div id="modal_heading" class="modal_heading"></div><br>
+            <div class="modal_sideHeading">DESCRIPTION</div>
+            <div id="modal_descriptionPara" class="modal-para"></div>
+            <div class="modal_sideHeading">TEAM SIZE</div>
+            <div id="modal_teamSizePara" class="modal-para"></div>
+            <div id="round1" class="modal_sideHeading">ROUND 1</div>
+            <div id="modal_round1Para" class="modal-para"></div>
+            <div id="round2" class="modal_sideHeading">ROUND 2</div>
+            <div id="modal_round2Para" class="modal-para"></div>
+            <div id="round3" class="modal_sideHeading"></div>
+            <div id="modal_round3Para" class="modal-para"></div>
+            <div id="event-rules" class="modal_sideHeading">EVENT RULES</div>
+            <div id="modal_rulesPara" class="modal-para"></div>
+            <div class="modal_info">
+                <div class="row">
+                    <div class="col-sm-6 info-box">
+                        <div class="modal_base">
+                            <h3 class="modal_time-date" style="color: white;">TIME</h3>
+                            <div class=" time-date" id="time"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 info-box">
+                        <div class="modal_base">
+                            <h3 class="modal_time-date" style="color: white;">DATE</h3>
+                            <div class=" time-date" id="date"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal_info">
+                <div class="row">
+                    <div class="col-sm-6 info-box">
+                        <div class="modal_base">
+                            <h3 class="modal_sideHeading" style="color: white;">CONVENERS</h3>
+                            <div class=" time-date" id="convenors"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 info-box">
+                        <div class="modal_base">
+                            <h3 class="modal_sideHeading" style="color: white;">VOLUNTEERS</h3>
+                            <div class=" time-date" id="volunteers"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reg-outer">
+                <a href="#" class="gradient-border" id="box">
+                    <div class="register">
+                        <div class="reg-text">REGISTER</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/swiper_bundle.min.js"></script>
+    <script src="js/eventsPage.js"></script>
+  </body>
+</html>
